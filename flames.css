@@ -1,12 +1,10 @@
 body{
     background-color: darkslategrey;
-    flex-wrap: wrap;
     margin: 5%;
     font-family: Arial, sans-serif;
 }
 .container{
     padding-top:20px;
-    flex-wrap: wrap;
     display:flex;
     flex-direction: column;
     width:25%;
