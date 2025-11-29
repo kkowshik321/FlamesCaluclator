@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES CALCULATOR</title>
+    <link rel="stylesheet" type="text/css" href="flames.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="color-picker">
+            <div class="color-btn" style="background-color:cornflowerblue;" onclick="kowshik('cornflowerblue')"></div>
+            <div class="color-btn" style="background-color:darkcyan;" onclick="kowshik('darkcyan')"></div>
+            <div class="color-btn" style="background-color:darkgoldenrod;" onclick="kowshik('darkgoldenrod')"></div>
+            <div class="color-btn" style="background-color:darkmagenta;" onclick="kowshik('darkmagenta')"></div>
+        </div>
+        <h2>FLAMES CALCULATOR</h2>
+        <h3>Find out your Relationship Status!</h3>
+        <form>
+            <h3> First Name:</h3>
+            <input type="text" id="name1" name="name1" required>
+            <h3> Second Name:</h3>
+            <input type="text" id="name2" name="name2" required>
+            <button id="button" onclick="flamesCaluclator()" type="button">Calculate Flames</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="flames.js"></script>
+    <script>
+         function kowshik(color)
+        {
+            document.getElementById('container').style.backgroundColor=color
+            document.getElementById('button').style.backgroundColor=color
+        }
+    </script>
+</body>
+</html>
