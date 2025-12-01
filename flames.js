@@ -55,4 +55,8 @@ function flamesCaluclator() {
 
     document.getElementById("result").innerHTML = 
         "<h3>Your FLAMES Result:</h3><h2>"  + resultText + "</h2>";
+    let users=JSON.parse(localStorage.getItem("users")) || [];
+            let newUser={name1:name1,name2:name2,result:resultText};
+            users.push(newUser);
+            localStorage.setItem("users",JSON.stringify(users));
 }
